@@ -22,7 +22,16 @@ struct TitleView: View {
                     VStack {
                         
                         Spacer()
+                        Image("icon").resizable()
+                            .scaledToFit().padding().onTapGesture {
+                                toNextPage.toggle()
+                            }
                         
+                        Text("Palette Canvas")
+                            .font(.title).bold()
+                            .padding(.top).onTapGesture {
+                                toNextPage.toggle()
+                            }
                         Spacer()
                         
                         NavigationLink(destination: LevelView().navigationBarBackButtonHidden(true),isActive: $toNextPage ,label: {EmptyView()})
