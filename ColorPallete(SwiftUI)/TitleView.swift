@@ -36,7 +36,7 @@ struct TitleView: View {
                         
                         NavigationLink(destination: LevelView().navigationBarBackButtonHidden(true),isActive: $toNextPage ,label: {EmptyView()})
                         Spacer()
-                        Text("tap to start").foregroundColor(Color(.systemBlue))
+                        Text("Tap to start").foregroundColor(Color(.systemBlue))
                         
                     }
                     .padding()
